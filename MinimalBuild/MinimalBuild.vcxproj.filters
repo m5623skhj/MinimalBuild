@@ -13,10 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Context">
+      <UniqueIdentifier>{a3ae4589-671d-453f-b1f5-0b0c0c512aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\PubSub">
+      <UniqueIdentifier>{73179080-7b00-4009-9bc7-e6f203c4cf1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Actor">
+      <UniqueIdentifier>{370eb447-4f91-477e-965e-b20ab6a8551a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FrameWork">
+      <UniqueIdentifier>{68371484-9625-4790-bd9a-de4fec022742}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="FrameWork.cpp">
+      <Filter>소스 파일\FrameWork</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Context.h">
+      <Filter>소스 파일\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="IPublish.h">
+      <Filter>소스 파일\PubSub</Filter>
+    </ClInclude>
+    <ClInclude Include="ISubscribe.h">
+      <Filter>소스 파일\PubSub</Filter>
+    </ClInclude>
+    <ClInclude Include="ContextItme.h">
+      <Filter>소스 파일\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>소스 파일\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWork.h">
+      <Filter>소스 파일\FrameWork</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

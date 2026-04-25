@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="MinimalBuild/MinimalBuild.vcxproj" />
+  <Project Path="MinimalBuild/MinimalBuild.vcxproj" Id="66b977d6-d44c-4ef7-be1d-a90978ca26f0" />
 </Solution>
