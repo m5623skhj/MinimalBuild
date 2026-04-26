@@ -1,33 +1,29 @@
 #pragma once
 #include <functional>
+#include "Context.h"
 
 class EventBus
 {
 public:
-	template<typename EventType>
-	void Subscribe(std::function<void(const EventType&)> handler)
-	{
-		handlers[typeid(EventType)].push_back
-		(
-			[fn](const void* event)
-			{
-				fn(*static_cast<const EventType*>(event));
-			}
-		)
-	}
+    using Handler = std::function<void(const Context&)>;
 
-	template<typename EventType>
-	void Publish(const EventType& event)
-	{
-		auto it = subscribers.find(typeid(EventType));
-		if (it == subscribers.end())
-		{
-			return;
-		}
-		
-		for (const auto& handler : it->second)
-		{
-			handler(event);
-		}
-	}
+    void Subscribe(ContextItemType type, Handler handler)
+    {
+        handlers[type].push_back(handler);
+    }
+
+    void Publish(const Context& ctx)
+    {
+        auto it = handlers.find(ctx.type);
+        if (it == handlers.end())
+            return;
+
+        for (auto& handler : it->second)
+        {
+            handler(ctx);
+        }
+    }
+
+private:
+    std::unordered_map<ContextItemType, std::vector<Handler>> handlers;
 };

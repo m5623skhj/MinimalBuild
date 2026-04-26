@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 
-enum class ContextItemType;
+using ContextItemType = unsigned short;
 
 struct Context
 {

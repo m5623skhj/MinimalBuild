@@ -141,7 +141,6 @@
   <ItemGroup>
     <ClInclude Include="Actor.h" />
     <ClInclude Include="Context.h" />
-    <ClInclude Include="ContextItme.h" />
     <ClInclude Include="EventBus.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
