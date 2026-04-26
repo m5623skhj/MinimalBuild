@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\Context">
       <UniqueIdentifier>{17739e41-4275-4bf6-9d1a-4be5c21ae1d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\EventBus">
+      <UniqueIdentifier>{45f4111f-2df1-4e7d-a938-d72829c31fd6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -44,6 +47,9 @@
     </ClInclude>
     <ClInclude Include="Actor.h">
       <Filter>소스 파일\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="EventBus.h">
+      <Filter>소스 파일\EventBus</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
