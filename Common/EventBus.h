@@ -16,7 +16,9 @@ public:
     {
         auto it = handlers.find(ctx.type);
         if (it == handlers.end())
+        {
             return;
+        }
 
         for (auto& handler : it->second)
         {

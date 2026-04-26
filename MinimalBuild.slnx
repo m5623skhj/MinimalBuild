@@ -5,6 +5,8 @@
   </Configurations>
   <Project Path="Common/Common.vcxproj" Id="a550b198-c53b-402f-8c78-b4abdc5a6ae8" />
   <Project Path="Inventory/Inventory.vcxproj" Id="79dd3089-b95c-4d9c-a449-8f1f5dd26b37" />
+  <Project Path="Item/Item.vcxproj" Id="fb5e70ad-4147-4646-bb0e-44d21c2a15cb" />
   <Project Path="Map/Map.vcxproj" Id="8e669e2b-4189-4e3f-aa9d-93690868a4d0" />
   <Project Path="MinimalBuild/MinimalBuild.vcxproj" Id="66b977d6-d44c-4ef7-be1d-a90978ca26f0" />
+  <Project Path="Quest/Quest.vcxproj" Id="27998894-f4bd-4b55-a991-6c93bcc67dfa" />
 </Solution>

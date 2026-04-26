@@ -1,2 +1,8 @@
-ItemPickupRequested = 0
-ItemPickupResult = 1
+ItemCheckRequest = 0
+ItemRemoveRequest = 1
+ItemAddRequest = 2
+QuestClearRequest = 3
+QuestCleared = 4
+ItemCheckResult = 5
+ItemRemoved = 6
+ItemCheckResponse = 7
