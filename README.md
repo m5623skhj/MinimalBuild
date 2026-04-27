@@ -178,22 +178,6 @@ void Quest::Init(EventBus& bus)
 
 ---
 
-### 실제 로직은 함수로 분리
-
-```cpp
-void Quest::OnItemRemoved(const Context& ctx, EventBus& bus)
-{
-    auto* data = reinterpret_cast<const ItemRemoved*>(ctx.data);
-
-    if (!IsQuestTargetItem(data->itemId))
-        return;
-
-    CompleteQuest(data->playerId, 1);
-}
-```
-
----
-
 ## 🔄 예시 흐름: 퀘스트 클리어
 
 ```
